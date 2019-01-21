@@ -19,6 +19,17 @@
 		8A60C3EB21F5E13300CEF6B3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A60C3EA21F5E13300CEF6B3 /* User.swift */; };
 		8A60C3EF21F5E38A00CEF6B3 /* DUApiServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A60C3EE21F5E38A00CEF6B3 /* DUApiServiceTests.swift */; };
 		8A60C3F121F5E3EC00CEF6B3 /* MockupHttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A60C3F021F5E3EC00CEF6B3 /* MockupHttpClient.swift */; };
+		8A60C3F421F5E63C00CEF6B3 /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = 8A60C3F321F5E63C00CEF6B3 /* users.json */; };
+		8A60C3F721F5E7AF00CEF6B3 /* DUUsersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A60C3F621F5E7AF00CEF6B3 /* DUUsersViewModel.swift */; };
+		8A60C3F921F5E80300CEF6B3 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A60C3F821F5E80300CEF6B3 /* Strings.swift */; };
+		8A60C3FB21F5E8A200CEF6B3 /* DUUserCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A60C3FA21F5E8A200CEF6B3 /* DUUserCellViewModel.swift */; };
+		8A60C3FE21F5E95800CEF6B3 /* DUUsersViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A60C3FD21F5E95800CEF6B3 /* DUUsersViewModelTests.swift */; };
+		8A60C40021F5E9A200CEF6B3 /* MockApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A60C3FF21F5E9A200CEF6B3 /* MockApiService.swift */; };
+		8A60C40421F5ECE300CEF6B3 /* DUUsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A60C40321F5ECE300CEF6B3 /* DUUsersViewController.swift */; };
+		8A60C40721F5EDB200CEF6B3 /* UIView+Anchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A60C40621F5EDB200CEF6B3 /* UIView+Anchor.swift */; };
+		8A60C40921F5EE0F00CEF6B3 /* DUUserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A60C40821F5EE0F00CEF6B3 /* DUUserTableViewCell.swift */; };
+		8A60C40C21F5EF8A00CEF6B3 /* DUUserCellViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A60C40B21F5EF8A00CEF6B3 /* DUUserCellViewModelTests.swift */; };
+		8A60C40F21F5F01C00CEF6B3 /* DUUsersViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A60C40E21F5F01C00CEF6B3 /* DUUsersViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +68,17 @@
 		8A60C3EA21F5E13300CEF6B3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		8A60C3EE21F5E38A00CEF6B3 /* DUApiServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DUApiServiceTests.swift; sourceTree = "<group>"; };
 		8A60C3F021F5E3EC00CEF6B3 /* MockupHttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockupHttpClient.swift; sourceTree = "<group>"; };
+		8A60C3F321F5E63C00CEF6B3 /* users.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
+		8A60C3F621F5E7AF00CEF6B3 /* DUUsersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DUUsersViewModel.swift; sourceTree = "<group>"; };
+		8A60C3F821F5E80300CEF6B3 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		8A60C3FA21F5E8A200CEF6B3 /* DUUserCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DUUserCellViewModel.swift; sourceTree = "<group>"; };
+		8A60C3FD21F5E95800CEF6B3 /* DUUsersViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DUUsersViewModelTests.swift; sourceTree = "<group>"; };
+		8A60C3FF21F5E9A200CEF6B3 /* MockApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockApiService.swift; sourceTree = "<group>"; };
+		8A60C40321F5ECE300CEF6B3 /* DUUsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DUUsersViewController.swift; sourceTree = "<group>"; };
+		8A60C40621F5EDB200CEF6B3 /* UIView+Anchor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Anchor.swift"; sourceTree = "<group>"; };
+		8A60C40821F5EE0F00CEF6B3 /* DUUserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DUUserTableViewCell.swift; sourceTree = "<group>"; };
+		8A60C40B21F5EF8A00CEF6B3 /* DUUserCellViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DUUserCellViewModelTests.swift; sourceTree = "<group>"; };
+		8A60C40E21F5F01C00CEF6B3 /* DUUsersViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DUUsersViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,8 +133,12 @@
 				8A60C3B521F5DF5700CEF6B3 /* Assets.xcassets */,
 				8A60C3B721F5DF5700CEF6B3 /* LaunchScreen.storyboard */,
 				8A60C3BA21F5DF5700CEF6B3 /* Info.plist */,
-				8A60C3E921F5E12500CEF6B3 /* Models */,
+				8A60C3F821F5E80300CEF6B3 /* Strings.swift */,
+				8A60C40521F5ED9B00CEF6B3 /* Extensions */,
 				8A60C3DC21F5DF7A00CEF6B3 /* Networking */,
+				8A60C3E921F5E12500CEF6B3 /* Models */,
+				8A60C3F521F5E78700CEF6B3 /* ViewModels */,
+				8A60C40121F5EC0B00CEF6B3 /* Views */,
 			);
 			path = DouughUsers;
 			sourceTree = "<group>";
@@ -122,6 +148,8 @@
 			children = (
 				8A60C3E421F5E04600CEF6B3 /* Mocks */,
 				8A60C3E121F5DFFB00CEF6B3 /* Networking */,
+				8A60C3FC21F5E92300CEF6B3 /* ViewModels */,
+				8A60C40D21F5EFF800CEF6B3 /* Views */,
 				8A60C3C521F5DF5700CEF6B3 /* Info.plist */,
 			);
 			path = DouughUsersTests;
@@ -158,8 +186,10 @@
 		8A60C3E421F5E04600CEF6B3 /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
+				8A60C3F221F5E62500CEF6B3 /* TestContent */,
 				8A60C3E521F5E05E00CEF6B3 /* MockupCodableURLSession.swift */,
 				8A60C3F021F5E3EC00CEF6B3 /* MockupHttpClient.swift */,
+				8A60C3FF21F5E9A200CEF6B3 /* MockApiService.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -170,6 +200,65 @@
 				8A60C3EA21F5E13300CEF6B3 /* User.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		8A60C3F221F5E62500CEF6B3 /* TestContent */ = {
+			isa = PBXGroup;
+			children = (
+				8A60C3F321F5E63C00CEF6B3 /* users.json */,
+			);
+			path = TestContent;
+			sourceTree = "<group>";
+		};
+		8A60C3F521F5E78700CEF6B3 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8A60C3F621F5E7AF00CEF6B3 /* DUUsersViewModel.swift */,
+				8A60C3FA21F5E8A200CEF6B3 /* DUUserCellViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8A60C3FC21F5E92300CEF6B3 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8A60C3FD21F5E95800CEF6B3 /* DUUsersViewModelTests.swift */,
+				8A60C40B21F5EF8A00CEF6B3 /* DUUserCellViewModelTests.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8A60C40121F5EC0B00CEF6B3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8A60C40A21F5EE3200CEF6B3 /* Cells */,
+				8A60C40321F5ECE300CEF6B3 /* DUUsersViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8A60C40521F5ED9B00CEF6B3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8A60C40621F5EDB200CEF6B3 /* UIView+Anchor.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8A60C40A21F5EE3200CEF6B3 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8A60C40821F5EE0F00CEF6B3 /* DUUserTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		8A60C40D21F5EFF800CEF6B3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8A60C40E21F5F01C00CEF6B3 /* DUUsersViewControllerTests.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,6 +375,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A60C3F421F5E63C00CEF6B3 /* users.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,11 +393,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A60C3FB21F5E8A200CEF6B3 /* DUUserCellViewModel.swift in Sources */,
 				8A60C3E021F5DFC200CEF6B3 /* DUHttpClient.swift in Sources */,
 				8A60C3E821F5E0D500CEF6B3 /* DUApiService.swift in Sources */,
+				8A60C40921F5EE0F00CEF6B3 /* DUUserTableViewCell.swift in Sources */,
+				8A60C3F721F5E7AF00CEF6B3 /* DUUsersViewModel.swift in Sources */,
 				8A60C3DE21F5DF9300CEF6B3 /* DURequestData.swift in Sources */,
 				8A60C3EB21F5E13300CEF6B3 /* User.swift in Sources */,
 				8A60C3AF21F5DF5600CEF6B3 /* AppDelegate.swift in Sources */,
+				8A60C3F921F5E80300CEF6B3 /* Strings.swift in Sources */,
+				8A60C40421F5ECE300CEF6B3 /* DUUsersViewController.swift in Sources */,
+				8A60C40721F5EDB200CEF6B3 /* UIView+Anchor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,8 +411,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A60C40F21F5F01C00CEF6B3 /* DUUsersViewControllerTests.swift in Sources */,
+				8A60C40021F5E9A200CEF6B3 /* MockApiService.swift in Sources */,
 				8A60C3E621F5E05E00CEF6B3 /* MockupCodableURLSession.swift in Sources */,
+				8A60C40C21F5EF8A00CEF6B3 /* DUUserCellViewModelTests.swift in Sources */,
 				8A60C3E321F5E01A00CEF6B3 /* DUHttpClientTests.swift in Sources */,
+				8A60C3FE21F5E95800CEF6B3 /* DUUsersViewModelTests.swift in Sources */,
 				8A60C3EF21F5E38A00CEF6B3 /* DUApiServiceTests.swift in Sources */,
 				8A60C3F121F5E3EC00CEF6B3 /* MockupHttpClient.swift in Sources */,
 			);

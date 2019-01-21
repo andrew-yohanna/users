@@ -15,7 +15,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        window = UIWindow()
+        window?.makeKeyAndVisible()
+        let usersVC = DUUsersViewController()
+        usersVC.viewModel = DUUsersViewModel(with: DUApiService())
+        let navigationController = UINavigationController(rootViewController: usersVC)
+        window?.rootViewController = navigationController
+        
+        // Adjusting the app navigation coloring
+        navigationController.navigationBar.barTintColor = .blue
+        navigationController.navigationBar.tintColor = .white
+        navigationController.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         return true
     }
 
