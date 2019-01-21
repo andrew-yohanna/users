@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		8A60C3AF21F5DF5600CEF6B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A60C3AE21F5DF5600CEF6B3 /* AppDelegate.swift */; };
-		8A60C3B121F5DF5600CEF6B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A60C3B021F5DF5600CEF6B3 /* ViewController.swift */; };
-		8A60C3B421F5DF5600CEF6B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A60C3B221F5DF5600CEF6B3 /* Main.storyboard */; };
 		8A60C3B621F5DF5700CEF6B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A60C3B521F5DF5700CEF6B3 /* Assets.xcassets */; };
 		8A60C3B921F5DF5700CEF6B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A60C3B721F5DF5700CEF6B3 /* LaunchScreen.storyboard */; };
-		8A60C3C421F5DF5700CEF6B3 /* DouughUsersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A60C3C321F5DF5700CEF6B3 /* DouughUsersTests.swift */; };
 		8A60C3CF21F5DF5700CEF6B3 /* DouughUsersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A60C3CE21F5DF5700CEF6B3 /* DouughUsersUITests.swift */; };
+		8A60C3DE21F5DF9300CEF6B3 /* DURequestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A60C3DD21F5DF9300CEF6B3 /* DURequestData.swift */; };
+		8A60C3E021F5DFC200CEF6B3 /* DUHttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A60C3DF21F5DFC200CEF6B3 /* DUHttpClient.swift */; };
+		8A60C3E321F5E01A00CEF6B3 /* DUHttpClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A60C3E221F5E01A00CEF6B3 /* DUHttpClientTests.swift */; };
+		8A60C3E621F5E05E00CEF6B3 /* MockupCodableURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A60C3E521F5E05E00CEF6B3 /* MockupCodableURLSession.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,17 +37,18 @@
 /* Begin PBXFileReference section */
 		8A60C3AB21F5DF5600CEF6B3 /* DouughUsers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DouughUsers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A60C3AE21F5DF5600CEF6B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8A60C3B021F5DF5600CEF6B3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8A60C3B321F5DF5600CEF6B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8A60C3B521F5DF5700CEF6B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A60C3B821F5DF5700CEF6B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A60C3BA21F5DF5700CEF6B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A60C3BF21F5DF5700CEF6B3 /* DouughUsersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DouughUsersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8A60C3C321F5DF5700CEF6B3 /* DouughUsersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DouughUsersTests.swift; sourceTree = "<group>"; };
 		8A60C3C521F5DF5700CEF6B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A60C3CA21F5DF5700CEF6B3 /* DouughUsersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DouughUsersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A60C3CE21F5DF5700CEF6B3 /* DouughUsersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DouughUsersUITests.swift; sourceTree = "<group>"; };
 		8A60C3D021F5DF5700CEF6B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A60C3DD21F5DF9300CEF6B3 /* DURequestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DURequestData.swift; sourceTree = "<group>"; };
+		8A60C3DF21F5DFC200CEF6B3 /* DUHttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DUHttpClient.swift; sourceTree = "<group>"; };
+		8A60C3E221F5E01A00CEF6B3 /* DUHttpClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DUHttpClientTests.swift; sourceTree = "<group>"; };
+		8A60C3E521F5E05E00CEF6B3 /* MockupCodableURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockupCodableURLSession.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +100,10 @@
 			isa = PBXGroup;
 			children = (
 				8A60C3AE21F5DF5600CEF6B3 /* AppDelegate.swift */,
-				8A60C3B021F5DF5600CEF6B3 /* ViewController.swift */,
-				8A60C3B221F5DF5600CEF6B3 /* Main.storyboard */,
 				8A60C3B521F5DF5700CEF6B3 /* Assets.xcassets */,
 				8A60C3B721F5DF5700CEF6B3 /* LaunchScreen.storyboard */,
 				8A60C3BA21F5DF5700CEF6B3 /* Info.plist */,
+				8A60C3DC21F5DF7A00CEF6B3 /* Networking */,
 			);
 			path = DouughUsers;
 			sourceTree = "<group>";
@@ -110,7 +111,8 @@
 		8A60C3C221F5DF5700CEF6B3 /* DouughUsersTests */ = {
 			isa = PBXGroup;
 			children = (
-				8A60C3C321F5DF5700CEF6B3 /* DouughUsersTests.swift */,
+				8A60C3E421F5E04600CEF6B3 /* Mocks */,
+				8A60C3E121F5DFFB00CEF6B3 /* Networking */,
 				8A60C3C521F5DF5700CEF6B3 /* Info.plist */,
 			);
 			path = DouughUsersTests;
@@ -123,6 +125,31 @@
 				8A60C3D021F5DF5700CEF6B3 /* Info.plist */,
 			);
 			path = DouughUsersUITests;
+			sourceTree = "<group>";
+		};
+		8A60C3DC21F5DF7A00CEF6B3 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				8A60C3DD21F5DF9300CEF6B3 /* DURequestData.swift */,
+				8A60C3DF21F5DFC200CEF6B3 /* DUHttpClient.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		8A60C3E121F5DFFB00CEF6B3 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				8A60C3E221F5E01A00CEF6B3 /* DUHttpClientTests.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		8A60C3E421F5E04600CEF6B3 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				8A60C3E521F5E05E00CEF6B3 /* MockupCodableURLSession.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +223,7 @@
 					};
 					8A60C3BE21F5DF5700CEF6B3 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 						TestTargetID = 8A60C3AA21F5DF5600CEF6B3;
 					};
 					8A60C3C921F5DF5700CEF6B3 = {
@@ -231,7 +259,6 @@
 			files = (
 				8A60C3B921F5DF5700CEF6B3 /* LaunchScreen.storyboard in Resources */,
 				8A60C3B621F5DF5700CEF6B3 /* Assets.xcassets in Resources */,
-				8A60C3B421F5DF5600CEF6B3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,7 +283,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A60C3B121F5DF5600CEF6B3 /* ViewController.swift in Sources */,
+				8A60C3E021F5DFC200CEF6B3 /* DUHttpClient.swift in Sources */,
+				8A60C3DE21F5DF9300CEF6B3 /* DURequestData.swift in Sources */,
 				8A60C3AF21F5DF5600CEF6B3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,7 +293,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A60C3C421F5DF5700CEF6B3 /* DouughUsersTests.swift in Sources */,
+				8A60C3E621F5E05E00CEF6B3 /* MockupCodableURLSession.swift in Sources */,
+				8A60C3E321F5E01A00CEF6B3 /* DUHttpClientTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,14 +322,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8A60C3B221F5DF5600CEF6B3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8A60C3B321F5DF5600CEF6B3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8A60C3B721F5DF5700CEF6B3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -467,6 +488,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DouughUsersTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -476,6 +498,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.douugh.DouughUsersTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DouughUsers.app/DouughUsers";
@@ -487,6 +510,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DouughUsersTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
