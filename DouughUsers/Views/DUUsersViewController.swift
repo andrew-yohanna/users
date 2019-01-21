@@ -8,10 +8,15 @@
 
 import UIKit
 
+/// Delegate to handle item selection as a DI
+protocol DUUsersTableViewDelegateProtocol: class {
+    func itemSelected(with detailsViewModel: DUUserDetailsViewModel)
+}
 
 class DUUsersViewController: UITableViewController {
     var viewModel: DUUsersViewModel!
-    
+    weak var delegate: DUUsersTableViewDelegateProtocol?
+
     lazy var activityIndicatorView: UIActivityIndicatorView = {
         let activityIndicatorView = UIActivityIndicatorView()
         activityIndicatorView.hidesWhenStopped = true
@@ -21,6 +26,8 @@ class DUUsersViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.delegate = self
+
         setupViews()
         
         self.viewModel.reloadItems = { [weak self] () in
@@ -74,5 +81,19 @@ class DUUsersViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return DUUserTableViewCell.cellHeight
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let detailsItemViewModel = self.viewModel!.detailsItemViewModel(at: indexPath.row)
+        self.delegate?.itemSelected(with: detailsItemViewModel)
+    }
+}
+
+// Conforming to the delegate protocol and handling item selection.
+extension DUUsersViewController: DUUsersTableViewDelegateProtocol {
+    func itemSelected(with detailsViewModel: DUUserDetailsViewModel) {
+        let vc = DUUserDetailsViewController()
+        vc.viewModel = detailsViewModel
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }

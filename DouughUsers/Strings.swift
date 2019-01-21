@@ -11,6 +11,7 @@ import Foundation
 enum Labels: String {
     case allUsers = "All Users"
     case noUsersErrorMessage =  "Error in loading users. Please try again"
+    case userDetails = "User Details"
 }
 
 enum CellIdentifiers: String {
