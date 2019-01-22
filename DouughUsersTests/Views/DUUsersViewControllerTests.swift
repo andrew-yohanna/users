@@ -70,5 +70,25 @@ class DUUsersViewControllerTests: XCTestCase {
         }
         wait(for: [expect], timeout: 1)
     }
+    
+    func test_change_sorting() {
+        let expect = XCTestExpectation(description: "fetching users")
+        
+        DispatchQueue.main.async {
+            self.sut.tableView.frame = CGRect(x: 0, y: 0, width: 320, height: 480) // force load table view
+            
+            self.sut.sort(by: .lastName)
+            
+            let cell1 = self.sut.tableView(self.sut.tableView, cellForRowAt: IndexPath(row: 0, section: 0)) as! DUUserTableViewCell
+            XCTAssertEqual("Bob Ang", cell1.userNameLabel.text)
+            
+            let cell2 = self.sut.tableView(self.sut.tableView, cellForRowAt: IndexPath(row: 1, section: 0)) as! DUUserTableViewCell
+            XCTAssertEqual("Vaculo Semenka", cell2.userNameLabel.text)
+            
+            expect.fulfill()
+        }
+        wait(for: [expect], timeout: 1)
+
+    }
 }
 
