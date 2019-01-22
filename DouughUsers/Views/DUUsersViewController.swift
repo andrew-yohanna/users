@@ -25,6 +25,12 @@ class DUUsersViewController: UITableViewController {
         return activityIndicatorView
     }()
     
+    lazy var headerView: DUSortUsersHeaderView = { 
+        let headerView = DUSortUsersHeaderView()
+        headerView.delegate = self
+        return headerView
+        }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.delegate = self
@@ -93,8 +99,6 @@ class DUUsersViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let headerView = DUSortUsersHeaderView()
-        headerView.delegate = self
         return headerView
     }
     
@@ -114,6 +118,6 @@ extension DUUsersViewController: DUUsersTableViewDelegateProtocol {
 
 extension DUUsersViewController: DUSortUsersHeaderViewDelegateProtocol {
     func sort(by sortingOption: SortingOption) {
-        print(sortingOption)
+        self.viewModel.sort(by: sortingOption)
     }
 }

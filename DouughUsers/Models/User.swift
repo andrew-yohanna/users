@@ -14,3 +14,16 @@ struct User: Codable {
     let lastName: String
     let email: String
 }
+
+extension User {
+    func compare(with user: User,using sortingOption: SortingOption = .firstName)  -> Bool {
+        switch sortingOption {
+        case .firstName:
+            return self.firstName.lowercased() < user.firstName.lowercased()
+        case .lastName:
+            return self.lastName.lowercased() < user.lastName.lowercased()
+        case .id:
+            return self.id < user.id
+        }
+    }
+}

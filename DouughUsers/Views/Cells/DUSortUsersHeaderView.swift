@@ -20,7 +20,8 @@ protocol DUSortUsersHeaderViewDelegateProtocol {
 
 class DUSortUsersHeaderView: UITableViewHeaderFooterView {
     var delegate: DUSortUsersHeaderViewDelegateProtocol? = nil
-
+    var selectedSegmentIndex = 0
+    
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setupView()
@@ -33,7 +34,7 @@ class DUSortUsersHeaderView: UITableViewHeaderFooterView {
     
     fileprivate func setupView() {
         let sortingSegmentedControl = UISegmentedControl(items: SortingOption.allCases.map { $0.rawValue })
-        sortingSegmentedControl.selectedSegmentIndex = 0
+        sortingSegmentedControl.selectedSegmentIndex = selectedSegmentIndex
         sortingSegmentedControl.addTarget(self, action: #selector(DUSortUsersHeaderView.sortingChanged(_:)), for: .valueChanged)
         self.addSubview(sortingSegmentedControl)
         sortingSegmentedControl.snp.makeConstraints { (make) in
@@ -42,7 +43,8 @@ class DUSortUsersHeaderView: UITableViewHeaderFooterView {
     }
     
     @objc func sortingChanged(_ segment: UISegmentedControl) {
-        let selectedSorting = SortingOption.allCases[segment.selectedSegmentIndex]
+        self.selectedSegmentIndex = segment.selectedSegmentIndex
+        let selectedSorting = SortingOption.allCases[selectedSegmentIndex]
         delegate?.sort(by: selectedSorting)
     }
 }

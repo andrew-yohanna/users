@@ -47,10 +47,10 @@ class DUUsersViewModelTests: XCTestCase {
         // Assert
         XCTAssert(mockAPIService!.isFetchAllUsersCalled)
         XCTAssertEqual(sut.itemViewModels.count, 3)
-        XCTAssertEqual(sut.itemViewModels[0].fullName, "Bob Ong")
-        XCTAssertEqual(sut.itemViewModels[0].email, "bob@ong.com")
-        XCTAssertEqual(sut.itemViewModels[1].fullName, "Benjamin Joseph Mark John Peter Simon Luke Chiong")
-        XCTAssertEqual(sut.itemViewModels[1].email, "benjamin_joseph_mark_john_peter_simon_luke@chiong.com")
+        XCTAssertEqual(sut.itemViewModels[0].fullName, "Benjamin Joseph Mark John Peter Simon Luke Chiong")
+        XCTAssertEqual(sut.itemViewModels[0].email, "benjamin_joseph_mark_john_peter_simon_luke@chiong.com")
+        XCTAssertEqual(sut.itemViewModels[1].fullName, "Bob Ong")
+        XCTAssertEqual(sut.itemViewModels[1].email, "bob@ong.com")
         XCTAssertEqual(sut.itemViewModels[2].fullName, "Vaculo Semenka")
         XCTAssertEqual(sut.itemViewModels[2].email, "vaculo@semenka.com")
         
@@ -84,7 +84,7 @@ class DUUsersViewModelTests: XCTestCase {
         sut.fetchUsers()
 
         let detailsViewModel = sut.detailsItemViewModel(at: 0)
-        XCTAssertEqual(detailsViewModel.fullName, "Bob Ong")
+        XCTAssertEqual(detailsViewModel.fullName, "Benjamin Joseph Mark John Peter Simon Luke Chiong")
     }
 }
 
