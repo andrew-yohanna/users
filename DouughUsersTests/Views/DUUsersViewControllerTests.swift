@@ -42,10 +42,10 @@ class DUUsersViewControllerTests: XCTestCase {
             self.sut.tableView.frame = CGRect(x: 0, y: 0, width: 320, height: 480) // force load table view
             
             let cell1 = self.sut.tableView(self.sut.tableView, cellForRowAt: IndexPath(row: 0, section: 0)) as! DUUserTableViewCell
-            XCTAssertEqual("Benjamin Joseph Mark John Peter Simon Luke Chiong", cell1.userNameLabel.text)
+            XCTAssertEqual("Benjamin Joseph Mark John Peter Simon Luke Xiong", cell1.userNameLabel.text)
             
             let cell2 = self.sut.tableView(self.sut.tableView, cellForRowAt: IndexPath(row: 1, section: 0)) as! DUUserTableViewCell
-            XCTAssertEqual("Bob Ong", cell2.userNameLabel.text)
+            XCTAssertEqual("Bob Ang", cell2.userNameLabel.text)
             
             XCTAssertEqual(self.sut.activityIndicatorView.isAnimating, false)
             expect.fulfill()
