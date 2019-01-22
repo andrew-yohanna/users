@@ -27,11 +27,10 @@ class DUUserDetailsViewControllerTests: XCTestCase {
         sut = nil
     }
     
-    
     func test_initialization() {
         XCTAssertEqual(sut.title, "User Details")
         XCTAssertEqual(sut.userFullNameLabel.text, "John Snow")
         XCTAssertEqual(sut.emailLabel.text, "john.snow@winterfell.got")
-        XCTAssertEqual(sut.idLabel.text, "1")
+        XCTAssertEqual(sut.idLabel.text, "ID: 1")
     }
 }

@@ -42,9 +42,9 @@ class DUUsersViewModel {
         }
     }
     
-    /// returns a DUUserDetailsViewModel object by location index
+    /// returns a DUUserDetailsViewModel object by User index
     ///
-    /// - Parameter itemIndex: index of Location object
+    /// - Parameter itemIndex: index of User object
     /// - Returns: DUUserDetailsViewModel object
     func detailsItemViewModel(at itemIndex: Int) -> DUUserDetailsViewModel {
         return DUUserDetailsViewModel.init(with: self.itemViewModels[itemIndex].user)

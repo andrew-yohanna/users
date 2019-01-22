@@ -18,6 +18,6 @@ class DUUserDetailsViewModel {
         self.user = user
         self.fullName = user.firstName + " " + user.lastName
         self.email = user.email
-        self.id = "\(user.id)"
+        self.id = "ID: \(user.id)"
     }
 }

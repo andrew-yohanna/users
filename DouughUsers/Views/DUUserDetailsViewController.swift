@@ -37,11 +37,17 @@ class DUUserDetailsViewController: UIViewController {
         self.stackView.snp.makeConstraints { (make) -> Void in
             make.top.equalTo(self.view.safeAreaLayoutGuide.snp.top).offset(10)
             make.left.equalTo(self.view.safeAreaLayoutGuide.snp.left).offset(20)
-            make.right.equalTo(self.view.safeAreaLayoutGuide.snp.right).offset(20)
+            make.right.equalTo(self.view.safeAreaLayoutGuide.snp.right).offset(-20)
         }
         
         self.userFullNameLabel.numberOfLines = 0
+        self.userFullNameLabel.font = UIFont.boldSystemFont(ofSize: 15)
+        
         self.emailLabel.numberOfLines = 0
+        self.emailLabel.font = UIFont.systemFont(ofSize: 14)
+        
+        self.idLabel.numberOfLines = 0
+        self.idLabel.font = UIFont.boldSystemFont(ofSize: 15)
     }
     
     fileprivate func populateDetails() {
