@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SnapKit
 
 /// Delegate to handle item selection as a DI
 protocol DUUsersTableViewDelegateProtocol: class {
@@ -60,9 +61,12 @@ class DUUsersViewController: UITableViewController {
         self.title = Labels.allUsers.rawValue
         
         self.tableView.addSubview(self.activityIndicatorView)
-        self.activityIndicatorView.centerXAnchor.constraint(equalTo: self.tableView.centerXAnchor).isActive = true
-        self.activityIndicatorView.centerYAnchor.constraint(equalTo: self.tableView.centerYAnchor).isActive = true
-        self.activityIndicatorView.anchor(top: nil, leading: nil, bottom: nil, trailing: nil, padding: .zero, size: .init(width: 40, height: 40))
+        
+        self.activityIndicatorView.snp.makeConstraints { (make) -> Void in
+            make.center.equalTo(self.tableView)
+            make.width.equalTo(40)
+            make.height.equalTo(40)
+        }
         
         self.tableView.tableFooterView = UIView()
         self.tableView.register(DUUserTableViewCell.self, forCellReuseIdentifier: CellIdentifiers.userCell.rawValue)

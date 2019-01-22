@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SnapKit
 
 class DUUserTableViewCell: UITableViewCell {
     static let cellHeight: CGFloat = 90
@@ -42,15 +43,10 @@ class DUUserTableViewCell: UITableViewCell {
         self.stackView.backgroundColor = .white
         self.stackView.axis = .vertical
         self.stackView.distribution = .equalSpacing
-        self.stackView.anchor(top: self.safeAreaLayoutGuide.topAnchor,
-                                  leading: self.safeAreaLayoutGuide.leadingAnchor,
-                                  bottom: self.safeAreaLayoutGuide.bottomAnchor,
-                                  trailing: self.safeAreaLayoutGuide.trailingAnchor,
-                                  padding: .init(top: DUUserTableViewCell.cellPadding,
-                                                 left: DUUserTableViewCell.cellPadding,
-                                                 bottom: -DUUserTableViewCell.cellPadding,
-                                                 right: -DUUserTableViewCell.cellPadding))
         
+        self.stackView.snp.makeConstraints { (make) -> Void in
+            make.edges.equalTo(self).inset(UIEdgeInsets(top: DUUserTableViewCell.cellPadding, left: DUUserTableViewCell.cellPadding, bottom: DUUserTableViewCell.cellPadding, right: DUUserTableViewCell.cellPadding))
+        }
         self.stackView.addArrangedSubview(self.userNameLabel)
         self.stackView.addArrangedSubview(self.emailLabel)
 

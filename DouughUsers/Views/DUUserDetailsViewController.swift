@@ -34,11 +34,11 @@ class DUUserDetailsViewController: UIViewController {
         self.stackView.axis = .vertical
         self.stackView.distribution = .equalSpacing
         self.stackView.spacing = 20
-        self.stackView.anchor(top: self.view.safeAreaLayoutGuide.topAnchor,
-                               leading: self.view.safeAreaLayoutGuide.leadingAnchor,
-                               bottom: nil,
-                               trailing: self.view.safeAreaLayoutGuide.trailingAnchor,
-                              padding: .init(top: 10, left: 20, bottom: 0, right: -20))
+        self.stackView.snp.makeConstraints { (make) -> Void in
+            make.top.equalTo(self.view.safeAreaLayoutGuide.snp.top).offset(10)
+            make.left.equalTo(self.view.safeAreaLayoutGuide.snp.left).offset(20)
+            make.right.equalTo(self.view.safeAreaLayoutGuide.snp.right).offset(20)
+        }
         
         self.userFullNameLabel.numberOfLines = 0
         self.emailLabel.numberOfLines = 0
