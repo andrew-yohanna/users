@@ -91,6 +91,16 @@ class DUUsersViewController: UITableViewController {
         let detailsItemViewModel = self.viewModel!.detailsItemViewModel(at: indexPath.row)
         self.delegate?.itemSelected(with: detailsItemViewModel)
     }
+    
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let headerView = DUSortUsersHeaderView()
+        headerView.delegate = self
+        return headerView
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 50
+    }
 }
 
 // Conforming to the delegate protocol and handling item selection.
@@ -99,5 +109,11 @@ extension DUUsersViewController: DUUsersTableViewDelegateProtocol {
         let vc = DUUserDetailsViewController()
         vc.viewModel = detailsViewModel
         self.navigationController?.pushViewController(vc, animated: true)
+    }
+}
+
+extension DUUsersViewController: DUSortUsersHeaderViewDelegateProtocol {
+    func sort(by sortingOption: SortingOption) {
+        print(sortingOption)
     }
 }

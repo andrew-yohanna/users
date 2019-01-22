@@ -34,6 +34,7 @@
 		8A60C41121F5F4EE00CEF6B3 /* DUUserDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A60C41021F5F4EE00CEF6B3 /* DUUserDetailsViewModel.swift */; };
 		8A60C41321F5F5B500CEF6B3 /* DUUserDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A60C41221F5F5B500CEF6B3 /* DUUserDetailsViewController.swift */; };
 		8A60C41521F6A3C900CEF6B3 /* DUUserDetailsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A60C41421F6A3C900CEF6B3 /* DUUserDetailsViewControllerTests.swift */; };
+		8A60C41721F6AB9E00CEF6B3 /* DUSortUsersHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A60C41621F6AB9E00CEF6B3 /* DUSortUsersHeaderView.swift */; };
 		CAD78B65CD3C22407ABB0E4D /* Pods_DouughUsersUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 434640B74208B5F33BB18FA5 /* Pods_DouughUsersUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -95,6 +96,7 @@
 		8A60C41021F5F4EE00CEF6B3 /* DUUserDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DUUserDetailsViewModel.swift; sourceTree = "<group>"; };
 		8A60C41221F5F5B500CEF6B3 /* DUUserDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DUUserDetailsViewController.swift; sourceTree = "<group>"; };
 		8A60C41421F6A3C900CEF6B3 /* DUUserDetailsViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DUUserDetailsViewControllerTests.swift; sourceTree = "<group>"; };
+		8A60C41621F6AB9E00CEF6B3 /* DUSortUsersHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DUSortUsersHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -281,6 +283,7 @@
 			isa = PBXGroup;
 			children = (
 				8A60C40821F5EE0F00CEF6B3 /* DUUserTableViewCell.swift */,
+				8A60C41621F6AB9E00CEF6B3 /* DUSortUsersHeaderView.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -542,6 +545,7 @@
 				8A60C41321F5F5B500CEF6B3 /* DUUserDetailsViewController.swift in Sources */,
 				8A60C41121F5F4EE00CEF6B3 /* DUUserDetailsViewModel.swift in Sources */,
 				8A60C3DE21F5DF9300CEF6B3 /* DURequestData.swift in Sources */,
+				8A60C41721F6AB9E00CEF6B3 /* DUSortUsersHeaderView.swift in Sources */,
 				8A60C3EB21F5E13300CEF6B3 /* User.swift in Sources */,
 				8A60C3AF21F5DF5600CEF6B3 /* AppDelegate.swift in Sources */,
 				8A60C3F921F5E80300CEF6B3 /* Strings.swift in Sources */,
