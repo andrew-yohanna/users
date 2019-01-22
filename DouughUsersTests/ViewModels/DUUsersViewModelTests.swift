@@ -78,14 +78,14 @@ class DUUsersViewModelTests: XCTestCase {
         wait(for: [expect], timeout: 0.0)
     }
     
-//    func test_get_details_view_model() {
-//        mockAPIService.completionUsersResult = Result.success(UsersStubGenerator().stubUsers())
-//
-//        fetchUsers()
-//
-//        let detailsViewModel = sut.detailsItemViewModel(at: 0)
-//        XCTAssertEqual(detailsViewModel.locationName, "Rockdale NSW 2216, Australia")
-//    }
+    func test_get_details_view_model() {
+        mockAPIService.completionUsersResult = Result.success(UsersStubGenerator().stubUsers())
+
+        sut.fetchUsers()
+
+        let detailsViewModel = sut.detailsItemViewModel(at: 0)
+        XCTAssertEqual(detailsViewModel.fullName, "Bob Ong")
+    }
 }
 
 class UsersStubGenerator {

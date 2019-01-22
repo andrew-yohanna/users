@@ -33,6 +33,7 @@
 		8A60C40F21F5F01C00CEF6B3 /* DUUsersViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A60C40E21F5F01C00CEF6B3 /* DUUsersViewControllerTests.swift */; };
 		8A60C41121F5F4EE00CEF6B3 /* DUUserDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A60C41021F5F4EE00CEF6B3 /* DUUserDetailsViewModel.swift */; };
 		8A60C41321F5F5B500CEF6B3 /* DUUserDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A60C41221F5F5B500CEF6B3 /* DUUserDetailsViewController.swift */; };
+		8A60C41521F6A3C900CEF6B3 /* DUUserDetailsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A60C41421F6A3C900CEF6B3 /* DUUserDetailsViewControllerTests.swift */; };
 		CAD78B65CD3C22407ABB0E4D /* Pods_DouughUsersUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 434640B74208B5F33BB18FA5 /* Pods_DouughUsersUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -93,6 +94,7 @@
 		8A60C40E21F5F01C00CEF6B3 /* DUUsersViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DUUsersViewControllerTests.swift; sourceTree = "<group>"; };
 		8A60C41021F5F4EE00CEF6B3 /* DUUserDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DUUserDetailsViewModel.swift; sourceTree = "<group>"; };
 		8A60C41221F5F5B500CEF6B3 /* DUUserDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DUUserDetailsViewController.swift; sourceTree = "<group>"; };
+		8A60C41421F6A3C900CEF6B3 /* DUUserDetailsViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DUUserDetailsViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -287,6 +289,7 @@
 			isa = PBXGroup;
 			children = (
 				8A60C40E21F5F01C00CEF6B3 /* DUUsersViewControllerTests.swift */,
+				8A60C41421F6A3C900CEF6B3 /* DUUserDetailsViewControllerTests.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -553,6 +556,7 @@
 				8A60C40F21F5F01C00CEF6B3 /* DUUsersViewControllerTests.swift in Sources */,
 				8A60C40021F5E9A200CEF6B3 /* MockApiService.swift in Sources */,
 				8A60C3E621F5E05E00CEF6B3 /* MockupCodableURLSession.swift in Sources */,
+				8A60C41521F6A3C900CEF6B3 /* DUUserDetailsViewControllerTests.swift in Sources */,
 				8A60C40C21F5EF8A00CEF6B3 /* DUUserCellViewModelTests.swift in Sources */,
 				8A60C3E321F5E01A00CEF6B3 /* DUHttpClientTests.swift in Sources */,
 				8A60C3FE21F5E95800CEF6B3 /* DUUsersViewModelTests.swift in Sources */,
